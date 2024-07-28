@@ -1,22 +1,22 @@
 public class Board
 {
     public int size;
-    Piece[][] pieces;
+    Piece[,] pieces;
 
     public Board(int size)
     {
         this.size = size;
-        pieces = new Piece[size][];
+        pieces = new Piece[size, size];
     }
 
     public bool AddPiece(int row, int col, Piece piece)
     {
-        if(pieces[row][col] != null)
+        if(pieces[row,col] != null)
         {
             return false;
         }
 
-        pieces[row][col] = piece;
+        pieces[row,col] = piece;
         return true;
     }
 
@@ -28,7 +28,7 @@ public class Board
         {
             for(int j = 0; j < size; j++)
             {
-                if(pieces[i][j] == null)
+                if(pieces[i,j] == null)
                 {
                     result.Add(new Pair(i, j));
                 }

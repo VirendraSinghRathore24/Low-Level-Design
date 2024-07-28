@@ -4,15 +4,15 @@
 
 LogProcessor logProcessor = new InfoLogProcessor(new DebugLogProcessor(new ErrorLogProcessor(null)));
 
-logProcessor.Log("Error", "This is error message");
-logProcessor.Log("Info", "This is info");
-logProcessor.Log("Debug", "debugging");
+// logProcessor.Log("Error", "This is error message");
+// logProcessor.Log("Info", "This is info");
+// logProcessor.Log("Debug", "debugging");
 
 
 // TODO : Tic Tac Toe 
 
-// Game game = new Game();
-// string winner = game.StartGame();
-// Console.WriteLine("Winner is " + winner);
+Game game = new Game();
+string winner = game.StartGame();
+Console.WriteLine("Winner is " + winner);
 
 // TODO : Parking Lot
