@@ -11,8 +11,12 @@ LogProcessor logProcessor = new InfoLogProcessor(new DebugLogProcessor(new Error
 
 // TODO : Tic Tac Toe 
 
-Game game = new Game();
-string winner = game.StartGame();
-Console.WriteLine("Winner is " + winner);
+// Game game = new Game();
+// string winner = game.StartGame();
+// Console.WriteLine("Winner is " + winner);
 
 // TODO : Parking Lot
+
+// TODO : Snake and Ladder
+Game1 game = new Game1(36);
+game.StartGame();
