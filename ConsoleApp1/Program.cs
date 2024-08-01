@@ -18,5 +18,10 @@ LogProcessor logProcessor = new InfoLogProcessor(new DebugLogProcessor(new Error
 // TODO : Parking Lot
 
 // TODO : Snake and Ladder
-Game1 game = new Game1(36);
-game.StartGame();
+// Game1 game = new Game1(36);
+// game.StartGame();
+
+// TODO : Null design pattern
+IVehicle vehicle = Factory.GetVehicleObject("Bike");
+int capacity = vehicle.GetCapacity();
+Console.WriteLine(capacity);
